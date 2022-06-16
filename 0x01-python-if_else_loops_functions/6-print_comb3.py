@@ -2,7 +2,9 @@
 
 for x in range(10):
     for y in range(x + 1, 10):
-        if str(x) + str(y) != '89':
-            print("{}{}".format(x, y), end=", ")
-        else:
-            print("{}{}".format(x, y))
+        if x != y:
+            z = f"{x}{y}"
+            if z != '89':
+                print("{}".format(z), end=", ")
+            else:
+                print(z)

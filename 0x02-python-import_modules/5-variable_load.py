@@ -1,4 +1,11 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
+
+
+def print_imported_variable():
     import variable_load_5
-    print(variable_load_5.a)
+
+    return variable_load_5.a
+
+
+if __name__ == "__main__":
+    print(print_imported_variable())

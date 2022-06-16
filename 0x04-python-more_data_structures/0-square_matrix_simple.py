@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for x in matrix:
-        new = []
-        for y in x:
-            z = y * y
-            new.append(z)
-        new_matrix.append(new)
+    power = []
 
-    return new_matrix
+    for x in matrix:
+        power.append([pow(y, 2) for y in x])
+    return power
