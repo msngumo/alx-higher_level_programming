@@ -1,21 +1,11 @@
 #!/usr/bin/python3
 
-"""
-Addition
-"""
-
 def add_integer(a, b=98):
     """
-    Function that adds two integers
+    Adds two integers
     """
-    if not isinstance(a, int):
+    if type(a) not in [int, float]:
         raise TypeError("a must be an integer")
-    elif not isinstance(b,int):
+    if type(b) not in [int, float]:
         raise TypeError("b must be an integer")
-    if isinstance(a, float):
-        x = int(a)
-    if isinstance(b, float):
-        y = int(b)
-
-    return(x + y)
-
+    return int(a) + int(b)
