@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+
     "Defines a rectangle"
     def __init__(self, width=0, height=0):
         "instantiates width and height"
@@ -54,5 +55,6 @@ class Rectangle:
                 if x != self.__height - 1:
                     new_str += "\n"
             return new_str
+
     def __repr__(self):
         return f"Rectangle({self.height}, {self.width})"
