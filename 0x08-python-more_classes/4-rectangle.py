@@ -55,12 +55,4 @@ class Rectangle:
                     new_str += "\n"
             return new_str
     def __repr__(self):
-        return '{self.__class__.__name__}({self.height}, {self.width})'.format(self=self)
-
-
-
-
-
-
-
-
+        return f"Rectangle({self.height}, {self.width})"
